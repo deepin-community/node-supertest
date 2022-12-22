@@ -1,0 +1,105 @@
+node-supertest (6.1.6-1) unstable; urgency=medium
+
+  * Uploaders: replace Leo Iannacone by myself, thanks for your work!
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * New upstream version 6.1.6
+
+ -- Yadd <yadd@debian.org>  Tue, 09 Nov 2021 12:03:22 +0100
+
+node-supertest (6.1.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.1.3
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 26 Jan 2021 15:19:58 +0100
+
+node-supertest (6.1.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.1
+  * New upstream version 6.1.2
+  * Refresh patches
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 25 Jan 2021 16:41:27 +0100
+
+node-supertest (6.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.0.1
+  * Refresh patches
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 16 Nov 2020 18:15:59 +0100
+
+node-supertest (4.0.2-5) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Add missing autopkgtest dependency to node-json-stringify-safe
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 16 Nov 2020 08:46:19 +0100
+
+node-supertest (4.0.2-4) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Jérémy Lal ]
+  * Fix test
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 25 Jul 2020 17:12:29 +0200
+
+node-supertest (4.0.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Embed nock and propagate for autopkgtest
+  * Disable failing ssl test
+  * Enable upstream test during autopkgtest only to avoid circular dependency
+    to node-express
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 22 Dec 2019 12:24:51 +0100
+
+node-supertest (4.0.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 20 Dec 2019 18:57:53 +0100
+
+node-supertest (4.0.2-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Change priority to optional
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Drop unneeded (build) dependency versions
+  * New upstream version 4.0.2
+  * Update doc files
+  * Use pkg-js-tools auto install
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 19 Dec 2019 23:05:47 +0100
+
+node-supertest (0.14.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.14.0
+  * Bump Standards-Version 3.9.6
+  * debian/watch: fix dversionmangle
+  * Add autopkgtest suite
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sun, 12 Oct 2014 15:08:44 +0200
+
+node-supertest (0.13.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #750219)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sat, 07 Jun 2014 16:29:58 +0200

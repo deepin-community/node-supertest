@@ -1,0 +1,28 @@
+Source: node-supertest
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-superagent <!nocheck>
+ , node-methods <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-supertest
+Vcs-Git: https://salsa.debian.org/js-team/node-supertest.git
+Homepage: https://github.com/visionmedia/supertest
+Rules-Requires-Root: no
+
+Package: node-supertest
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-superagent
+ , node-methods
+Description: superagent driven library for testing HTTP servers
+ This package provides a high-level abstraction for testing HTTP
+ servers using the superagent Node.js module.
+ .
+ Node.js is an event-based server-side JavaScript engine.

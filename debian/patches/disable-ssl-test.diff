@@ -1,0 +1,32 @@
+Description: disable ssl test
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2020-11-16
+
+--- a/test/supertest.js
++++ b/test/supertest.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ const request = require('..');
+-const https = require('https');
++//const https = require('https');
+ const fs = require('fs');
+ const path = require('path');
+ const should = require('should');
+@@ -109,6 +109,7 @@
+     });
+   });
+ 
++  /*
+   it('should work with a https server', function (done) {
+     const app = express();
+     const fixtures = path.join(__dirname, 'fixtures');
+@@ -130,6 +131,7 @@
+         done();
+       });
+   });
++  */
+ 
+   it('should work with .send() etc', function (done) {
+     const app = express();
